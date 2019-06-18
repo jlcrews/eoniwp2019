@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}
+//site responsive: small desktop
+@mixin bp_desktop_smaller {
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1289px) {
+    @content;
+  }
+}
+@mixin bp_phone {
+  @media only screen and (max-device-width:500px) {
+    @content;
+  }
+}
+
+@mixin mobile_width_float_margin {
+  float:left;
+  width:100%;
+  margin:0;
+}
+@mixin image_responsive {
+  img {
+    width:100%;
+    height:auto;
+  }
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin ul-list-no-margin {
+  margin:0;
+  padding:0;
+}
+@mixin ul-li-last-item-no-margin {
+  &:last-child {
+    padding:0;
+    margin:0;
+  }
+}
+@mixin ul-no-list-style {
+  list-style-type:none;
+}
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin border-radius($border) {
+  -webkit-border-radius:$border;
+  -moz-border-radius:$border;
+  border-radius:$border;
+}
+@mixin grayscale($perc) {
+  -webkit-filter: grayscale($perc); /* Safari 6.0 - 9.0 */
+  filter: grayscale($perc);
+}
+@mixin skew($arg) {
+  -webkit-transform:skewX($arg);
+  -ms-transform:skewX($arg);
+  transform:skewX($arg);
+}
+@mixin scale($rate){
+  transform:scale($rate);
+  -moz-transform:scale($rate);
+  -webkit-transform:scale($rate);
+}
+@mixin font-awesome-declaration($type, $unicode, $size, $margin, $color, $weight) {
+  &:#{$type} {
+    content:$unicode;
+    font-family:"FontAwesome";
+    font-size:$size;
+    color:$color;
+    font-weight:$weight;
+    margin:$margin;
+    @content;
+  }
+}
+@mixin image_overlay_transition($speed,$opacity,$scale) {
+  img {
+    @include transition($speed all ease);
+    width:100%;
+    height:auto;
+  }
+
+  &:hover {
+
+    img {
+      @include transition($speed all ease);
+      @include scale($scale);
+      opacity:$opacity;
+    }
+  }
+}
