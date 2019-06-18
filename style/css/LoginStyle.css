@@ -1,0 +1,19 @@
+/**
+ * File LoginStyle.css
+ *
+ * css to brand the /wp-login.php screen for client
+ *
+ */
+/*//@TODO:is this file even needed? can we put into admin.scss?*/
+body {
+    background:#CA7938;
+}
+.login #backtoblog a:focus, .login #nav a:focus, .login h1 a:focus, .login #backtoblog a, .login #nav a {
+    color:white;
+}
+body.login div#login h1 a {
+    background:white url(../../images/logo.png) no-repeat;
+    background-size:319px;
+    height:36px;
+    width:322px;
+}

@@ -1,0 +1,219 @@
+//google font imports would go here
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+body {
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0 0 0.500em 0;
+  padding:0;
+}
+
+a {
+  outline:none;
+  text-decoration:none;
+}
+
+.screen_reader_text {
+  border:0;
+  clip:rect(1px, 1px, 1px, 1px);
+  clip-path:inset(50%);
+  height:1px;
+  margin:-1px;
+  overflow:hidden;
+  padding:0;
+  position:absolute !important;
+  width:1px;
+  word-wrap:normal !important;
+}
+
+.wrapper {
+  margin:auto;
+  float:none;
+  max-width:1290px;
+  display:block;
+}
+
+.pdf_link:after {
+  content:"";
+  background:url("../../../images/pdf_link.png") center right no-repeat;
+  padding:0 1em 0 0.5em;
+  white-space:nowrap;
+}
+
+.doc_link:after {
+  content:"";
+  background:url("../../../images/word_link.png") center right no-repeat;
+  padding:0 1em 0 0.5em;
+  white-space:nowrap;
+}
+
+.button {
+  @include border-radius(0.66em);
+  background:black;
+  color:white;
+  padding:0.54em 0.8em;
+  text-align:center;
+  border:none;
+  outline:none;
+  font-weight:500;
+  cursor:pointer;
+  font-size:0.9em;
+
+  &:hover {
+    @include transition(background 800ms);
+    background:purple;
+  }
+
+  &:disabled {
+    background:none;
+    border:0.040em solid #ccc;
+    color:#ccc;
+    cursor:unset;
+  }
+}
+
+.bold {
+  font-weight:900;
+}
+
+.telephone_link {
+  font-weight:normal;
+  color:white;
+  text-decoration:none;
+}
+
+.mobile_only {
+  display:none;
+
+  @include bp-small {
+    display:block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display:inline;
+  float:left;
+  margin-right:1.5em;
+
+  @include bp-small {
+    width:100%;
+    height:auto;
+    margin:0;
+  }
+}
+
+.alignright {
+  display:inline;
+  float:right;
+  margin-left:1.5em;
+
+  @include bp-small {
+    width:100%;
+    height:auto;
+    float:left;
+    margin:0;
+  }
+}
+
+.aligncenter {
+  clear:both;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+  @include bp-small {
+    width:100%;
+    height:auto;
+  }
+}
+
+/*--------------------------------------------------------------
+ # Responsive Video Wrapper & Video Object
+--------------------------------------------------------------*/
+.videoWrapper {
+  position:relative;
+  padding-bottom:56.25%; /* 16:9 */
+  padding-top:25px;
+  height:0;
+
+  iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+video {
+  width:100% !important;
+  height:auto !important;
+  display:block;
+}
+
+/*--------------------------------------------------------------
+# Scroll To Top
+--------------------------------------------------------------*/
+#scroll_top {
+  display:block;
+  width:100%;
+  float:right;
+
+  #scroll {
+    width:50px;
+    height:50px;
+    float:right;
+    position:relative;
+    right:7.5%;
+    margin:0 0 1.250em 0;
+
+    @include bp-small {
+      right:1%;
+    }
+
+    @media #{$table_size} {
+      right:1%;
+    }
+
+    a {
+      background:orange;/*TODO:change later*/;
+      width:100%;
+      height:100%;
+      float:right;
+      text-decoration:none;
+      -webkit-border-radius:0.273em;
+      -moz-border-radius:0.273em;
+      border-radius:0.273em;
+
+      &::after {
+        content:"\f0d8";
+        font-family:"FontAwesome";
+        font-size:2.934em;
+        color:white;
+        text-align:center;
+        font-weight:100;
+        float:left;
+        margin:0.035em 0 0 0.250em;
+      }
+
+      &:hover {
+        transition:background 0.7s ease;
+        background:orange;/*TODO:change later*/;
+      }
+    }
+  }
+}
