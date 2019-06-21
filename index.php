@@ -5,9 +5,9 @@
  * @package eoni-wordpress
  */
 get_header() ?>
-<main>
+<main class="wrapper">
     <div class="homeSlider">
-        <ul class="slickSlider">
+        <ul class="slick_slider">
             <li>
                 <div class="left">
                     <h2>Title Here</h2>
@@ -21,6 +21,10 @@ get_header() ?>
                             >Learn More</a>
                         </div>
                     </div>
+                </div>
+                <div class="asset">
+                    <img src="https://dummyimage.com/300x140/634/fff.png"
+                         alt="change me"/>
                 </div>
             </li>
             <li>
@@ -37,6 +41,10 @@ get_header() ?>
                         </div>
                     </div>
                 </div>
+                <div class="asset">
+                    <img src="https://dummyimage.com/300x140/634/fff.png"
+                         alt="change me"/>
+                </div>
             </li>
             <li>
                 <div class="left">
@@ -51,6 +59,10 @@ get_header() ?>
                             >Learn More</a>
                         </div>
                     </div>
+                </div>
+                <div class="asset">
+                    <img src="https://dummyimage.com/300x140/634/fff.png"
+                         alt="change me"/>
                 </div>
             </li>
         </ul>

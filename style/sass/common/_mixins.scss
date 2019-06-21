@@ -76,6 +76,12 @@
     @content;
   }
 }
+@mixin box-shadow($stirng) {
+  -webkit-box-shadow:$string;
+  -moz-box-shadow:$string;
+  -ie-box-shadow:$stirng;
+  box-shadow:$stirng;
+}
 @mixin border-radius($border) {
   -webkit-border-radius:$border;
   -moz-border-radius:$border;
