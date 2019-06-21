@@ -1,4 +1,5 @@
-//google font imports would go here
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
 
 /*--------------------------------------------------------------
 # Global
@@ -6,7 +7,9 @@
 body {
   margin:0;
   padding:0;
-  font-family:sans-serif;
+  background-color:#FBFCFC;
+  font:16px/1.5 'PT Sans', Helvetica, Arial, sans-serif;
+  color:#333;
 }
 
 ul {
@@ -40,7 +43,7 @@ a {
 .wrapper {
   margin:auto;
   float:none;
-  max-width:1290px;
+  max-width:1000px;
   display:block;
 }
 
@@ -99,6 +102,14 @@ a {
   @include bp-small {
     display:block;
   }
+}
+
+.greenSquareButton {
+  @include border-radius(3px);
+  background:green;
+  color:white;
+  padding:3px 8px;
+  text-transform:lowercase;
 }
 
 /*--------------------------------------------------------------
@@ -182,10 +193,6 @@ video {
     margin:0 0 1.250em 0;
 
     @include bp-small {
-      right:1%;
-    }
-
-    @media #{$table_size} {
       right:1%;
     }
 

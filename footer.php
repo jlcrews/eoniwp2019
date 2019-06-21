@@ -1,4 +1,4 @@
-<footer>
+<footer class="wrapper">
     <div class="whiteTop">
         <div class="bottomMenu">
             <div class="menuItemList">
@@ -18,15 +18,15 @@
                 <?php wp_nav_menu(['theme_location' => 'footer_menu_four'])?>
             </div>
         </div>
-        <div id="logo">
+        <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="<?=get_template_directory_uri() ?>/images/logo_footer.svg"
-                  alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" />
+            ><img src="https://dummyimage.com/300x140/000/fff.png"
+                  alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" /></a>
         </div>
     </div>
     <div class="bottom">
-        <p>&copy; <?=date("Y").' '.get_bloginfo( 'name' )?></p>
+        <p>&copy; <?=date("Y").' '.get_bloginfo( 'name' )?> - Website By <a href="https://www.zachis.it" title="Zachary Smith Web Developer">zachis.it</a></p>
     </div>
 </footer>
 <?php wp_footer(); ?>

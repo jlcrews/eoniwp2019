@@ -22,8 +22,62 @@
 --------------------------------------------------------------*/
 header {
 
-  #logo {
+  .top {
+    display:block;
+    padding:0.5em 0 0 0;
 
+    .logo {
+      display:inline-block;
+    }
+
+    .rightActions {
+      display:inline-block;
+      vertical-align:top;
+      float:right;
+      width:440px;
+      margin:0.5em 0 0 0;
+
+      .phone {
+        font-size:2.1em;
+        font-weight:900;
+        margin:0 0 0.5em 0;
+        text-align:right;
+        color:$headlineDarkGray;
+        font-family:'Open Sans',sans-serif;
+      }
+
+      .menu {
+        text-align:right;
+        list-style-type:none;
+
+        li {
+          margin:0 1em 0 0;
+          display:inline-block;
+
+          &:last-of-type {
+            margin:0;
+          }
+
+          &.webmail {
+            @include font-awesome-declaration('before', '\f0e0', 1.1em, null, $headlineDarkGray, null );
+          }
+
+          &.myaccount {
+            @include font-awesome-declaration('before', '\f2bd', 1.1em, null, $headlineDarkGray, null );
+          }
+
+          a {
+            color:$headlineDarkGray;
+            text-decoration:none;
+            font-size:1.2em;
+
+            &:hover {
+              color:#ccc;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -68,10 +122,9 @@ header {
 }
 
 #menu {
-  float:right;
-  width:auto;
-  clear:both;
-  margin:-1em 0 0 0;//@TODO:not most elegant;fix later
+  width:100%;
+  padding:1em 0;
+  background:#e3e3e3;
 
   @include bp-small {
     background:black;
@@ -88,12 +141,16 @@ header {
 
     li {
       display:inline-block;
-      margin:0 1.3em 0 0;
+      //margin:0 1.3em 0 0;
+      width:19%;
+      text-align:center;
       position:relative;
 
       a {
-        font-size:1em;
-        color:gray;
+        font-size:2em;
+        font-weight:900;
+        color:$headlineDarkGray;
+        text-transform:uppercase;
       }
 
       &:hover {
@@ -106,7 +163,7 @@ header {
       &.current_page_item {
 
         a {
-          color:yellow;
+          color:#ccc;
         }
       }
     }
@@ -161,6 +218,55 @@ header {
 /*--------------------------------------------------------------
 # Home Page Specific
 --------------------------------------------------------------*/
+.homeSlider {
+  display:block;
+  background:pink;
+  overflow:hidden;
+
+  .slick_slider {
+    display:block;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+
+    .slick-dots {
+      display:none !important;
+    }
+
+    li {
+      display:inline-block;
+
+      .left {
+        width:50%;
+        display:inline-block;
+
+        h2 {
+          font-size:2.3em;
+        }
+
+        p {
+          font-size:1.5em;
+          line-height:1.5;
+          font-weight:300;
+        }
+
+        .priceAction {
+          display:block;
+
+          .numbers {
+            font-weight:900;
+            font-size:2.3em;
+          }
+        }
+      }
+
+      .asset {
+        width:49%;
+        display:inline-block;
+      }
+    }
+  }
+}
 
 /*--------------------------------------------------------------
 # Content
@@ -173,8 +279,13 @@ header {
 
 }
 
-#content_full {
+#contentFull {
+  background:white;
+  padding:2em;
 
+  .internalPageTitle {
+    font-size:1.8em;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -188,8 +299,82 @@ header {
 # Footer
 --------------------------------------------------------------*/
 footer {
-  float:left;
-  width:100%;
-  padding:1.510em 0 0 0;
+  display:block;
   margin:0;
+
+  .whiteTop {
+    background:white;
+    padding:2em;
+
+    .bottomMenu {
+      display:inline-block;
+      width:67%;
+
+      .menuItemList {
+        display:inline-block;
+        margin:0 1em 0 0;
+        width:22%;
+
+        &:last-of-type {
+          margin:0;
+        }
+
+        h3 {
+          font-size:1.1em;
+          font-weight:900;
+          color:$headlineDarkGray;
+          display:block;
+          margin:0 0 0.2em 0;
+        }
+
+        .menu {
+
+          ul {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+
+            li {
+              display:block;
+              margin:0 0 0.2em 0;
+
+              a {
+                color:$headlineDarkGray;
+                font-size:0.9em;
+
+                &:hover {
+                  color:#ccc;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .logo {
+      display:inline-block;
+      float:right;
+      width:28%;
+
+      img {
+        width:100%;
+        height:auto;
+      }
+    }
+  }
+
+  .bottom {
+    display:block;
+
+    p {
+      font-size:1em;
+      text-align:center;
+
+      a {
+        color:$headlineDarkGray;
+        text-decoration:underline;
+      }
+    }
+  }
 }

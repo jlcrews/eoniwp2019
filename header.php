@@ -29,24 +29,24 @@
 </head>
 <body>
 
-<header>
+<header class="wrapper">
     <div class="top">
         <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="<?=get_template_directory_uri() ?>/images/logo.svg"
+            ><img src="https://dummyimage.com/300x140/000/fff.png"
                   alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" />
             </a>
         </div>
         <div class="rightActions">
             <div class="phone">(541) 685-4544</div>
             <ul class="menu">
-                <li>
+                <li class="webmail">
                     <a href="<?=home_url('')?>"
                        title="Webmail"
                     >Webmail</a>
                 </li>
-                <li>
+                <li class="myaccount">
                     <a href="<?=home_url('')?>"
                        title="My Account"
                     >My Account</a>
