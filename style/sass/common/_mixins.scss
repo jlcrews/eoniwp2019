@@ -76,11 +76,11 @@
     @content;
   }
 }
-@mixin box-shadow($stirng) {
+@mixin box-shadow($string) {
   -webkit-box-shadow:$string;
   -moz-box-shadow:$string;
-  -ie-box-shadow:$stirng;
-  box-shadow:$stirng;
+  -ie-box-shadow:$string;
+  box-shadow:$string;
 }
 @mixin border-radius($border) {
   -webkit-border-radius:$border;

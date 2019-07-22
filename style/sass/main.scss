@@ -147,7 +147,7 @@ header {
       position:relative;
 
       a {
-        font-size:2em;
+        font-size:1.7em;
         font-weight:900;
         color:$headlineDarkGray;
         text-transform:uppercase;
@@ -279,12 +279,167 @@ header {
 
 }
 
+main {
+
+  &.internalMarketing {
+
+    #contentFull {
+      padding:0 0 2em 0;
+    }
+  }
+}
+
 #contentFull {
+  @include box-shadow(0px 19px 32px 3px rgba(0,0,0,.3));
   background:white;
   padding:2em;
 
   .internalPageTitle {
     font-size:1.8em;
+  }
+
+  .subMenu {
+    @include box-shadow(0px 5px 5px rgba(0,0,0,.3));
+    background:$brand_orange;
+    list-style-type:none;
+    margin:0;
+    padding:1em 3em;
+    position:relative;
+
+    li {
+      display:inline-block;
+      margin:0 1.5em 0 0;
+
+      &.current {
+
+        &:before {
+          content:'^';
+          position:absolute;
+          top:-31px;
+          left:73px;
+          font-size:3em;
+          color:$brand_orange;
+        }
+
+        a {
+          font-weight:900;
+        }
+      }
+
+      a {
+        @include transition(600ms all ease);
+        font-weight:100;
+        color:white;
+        font-size:1.5em;
+        text-decoration:none;
+
+        &:hover {
+          @include transition(600ms all ease);
+          border-bottom:1px solid white;
+        }
+      }
+    }
+  }
+
+  //all styles for internal special landing pages
+  .internalMarketingTemplate {
+    margin:auto;
+    width:90%;
+
+    .signupTop {
+      display:block;
+      margin:2.2em 0 0 0;
+
+      .title {
+        font-size:2em;
+        font-weight:700;
+        display:inline-block;
+        text-transform:uppercase;
+      }
+
+      .signupAction {
+        float:right;
+
+        .greenSquareButton {
+          @include border-radius(3px);
+          padding:0.5em 1.6em;
+          text-transform:uppercase;
+          font-size:1.3em;
+        }
+      }
+    }
+
+    .threeFullColumn {
+      display:block;
+
+      .one {
+        vertical-align:top;
+        display:inline-block;
+        width:32.5%;
+
+        .contain {
+          display:block;
+
+          .title {
+            font-size:2.4em;
+            font-weight:700;
+            text-transform:uppercase;
+            margin:0 0.3em 0 0;
+          }
+
+          .underTitle {
+            display:block;
+            margin:0 0 1em 0;
+
+            p {
+              margin:0;
+              padding:0;
+            }
+          }
+
+          .contentPara {
+            display:block;
+            margin:0 0 1.5em 0;
+
+            p {
+              font-size:0.8em;
+              line-height:2;
+            }
+          }
+
+          .learnMore {
+            display:block;
+
+            .graySquareButton {
+              @include border-radius(3px);
+              background:$brand_gray;
+              padding:0.3em 1em;
+              text-transform:uppercase;
+              text-align:center;
+              color:white;
+            }
+          }
+        }
+      }
+
+      .two {
+        @extend .one;
+        border-left:1px solid #333;
+
+        .contain {
+          margin:0 0 0 2em;
+        }
+      }
+
+      .three {
+        @extend .one;
+        border-left:1px solid #333;
+
+        .contain {
+          margin:0 0 0 2em;
+        }
+      }
+    }
   }
 }
 
@@ -303,6 +458,7 @@ footer {
   margin:0;
 
   .whiteTop {
+    @include box-shadow(0px 37px 32px 3px rgba(0,0,0,.3));
     background:white;
     padding:2em;
 
@@ -368,8 +524,9 @@ footer {
     display:block;
 
     p {
-      font-size:1em;
+      font-size:0.9em;
       text-align:center;
+      font-style:italic;
 
       a {
         color:$headlineDarkGray;
