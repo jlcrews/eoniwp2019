@@ -34,7 +34,7 @@
         <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="https://dummyimage.com/300x140/000/fff.png"
+            ><img src="<?=get_template_directory_uri() ?>/images/logo.png"
                   alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" />
             </a>
         </div>

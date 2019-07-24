@@ -28,6 +28,12 @@ header {
 
     .logo {
       display:inline-block;
+      width:200px;
+
+      img {
+        width:100%;
+        height:auto;
+      }
     }
 
     .rightActions {
@@ -163,7 +169,7 @@ header {
       &.current_page_item {
 
         a {
-          color:#ccc;
+          color:#969595;
         }
       }
     }
@@ -369,6 +375,10 @@ main {
       }
     }
 
+    /*
+    3 column
+    - used on Internet
+     */
     .threeFullColumn {
       display:block;
 
@@ -376,6 +386,16 @@ main {
         vertical-align:top;
         display:inline-block;
         width:32.5%;
+
+        .asset {
+          width:100%;
+          display:block;
+
+          img {
+            width:100%;
+            height:auto;
+          }
+        }
 
         .contain {
           display:block;
@@ -400,6 +420,7 @@ main {
           .contentPara {
             display:block;
             margin:0 0 1.5em 0;
+            min-height:176px;
 
             p {
               font-size:0.8em;
@@ -437,6 +458,153 @@ main {
 
         .contain {
           margin:0 0 0 2em;
+        }
+      }
+    }
+
+    /*
+    2 column
+    - used on Fiber
+     */
+    .twoFullColumn {
+      display:block;
+
+      .dataRow {
+        display:block;
+        margin:0 0 1em 0;
+        min-height:630px;
+
+        .columnLayout {
+
+          .title {
+            color:white;
+            text-align:center;
+            font-size:2em;
+            padding:0.2em 0;
+          }
+
+          .underTitle {
+            background:$brand_orange;
+            text-align:center;
+            padding:1em 0;
+            color:gray;
+            font-size:1.3em;
+
+            .price {
+              font-size:2.5em;
+              color:white;
+              display:block;
+            }
+          }
+
+          .itemizedPoints {
+            background:#e3e3e3;
+            list-style-type:none;
+            margin:0;
+            padding:1em 0;
+
+            li {
+              display:block;
+              text-align:center;
+              margin:0 0 2em 0;
+
+              .twoColSquareButton {
+                @include transition(400ms all ease);
+                @include border-radius(5px);
+                background:$brand_orange;
+                text-align:center;
+                font-size:1.3em;
+                padding:0.4em 0;
+                margin:1em 3em;
+                color:white;
+                text-transform:uppercase;
+                text-decoration:none;
+                display:block;
+
+                &:hover {
+                  @include transition(400ms all ease);
+                  background:$brand_gray;
+                }
+              }
+            }
+          }
+        }
+
+        .one {
+          @include border-radius(10px);
+          float:left;
+          width:300px;
+          background:$brand_gray;
+
+          @extend .columnLayout;
+        }
+
+        .two {
+          @include border-radius(10px);
+          float:right;
+          width:300px;
+          background:$brand_gray;
+
+          @extend .columnLayout;
+        }
+      }
+    }
+
+    .explainerTwoCol {
+      display:block;
+
+      .left {
+        width:40%;
+        float:left;
+        display:inline-block;
+
+        h4 {
+          font-size:2em;
+        }
+
+        .priceWithText {
+          @include border-radius(5px);
+          background:$brand_orange;
+          color:white;
+          text-align:center;
+
+          .price {
+            font-size:2.7em;
+            display:inline-block;
+            width:20%;
+          }
+
+          .contractLength {
+            @include border-radius(5px);
+            margin:9px 2px 0 0;
+            padding:0.2em;
+            background:green;
+            font-size:1.6em;
+            display:inline-block;
+            width:70%;
+            float:right;
+          }
+        }
+
+        .bottomAsterisk {
+          display:block;
+          text-align:center;
+          font-size:1.3em;
+          margin:1em 0 0 0;
+        }
+      }
+
+      .right {
+        float:right;
+        display:inline-block;
+        width:40%;
+
+        .title {
+
+        }
+
+        .finePrint {
+
         }
       }
     }
