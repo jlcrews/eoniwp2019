@@ -469,6 +469,11 @@ main {
       }
     }
 
+    .topExplainerPara {
+      display:block;
+      margin-bottom:5em;
+    }
+
     /*
     3 column
     - used on Internet
@@ -692,13 +697,26 @@ main {
         float:right;
         display:inline-block;
         width:40%;
+        margin-bottom:4em;
+
+        .router {
+          width:66%;
+
+          img {
+            width:100%;
+            height:auto;
+          }
+        }
 
         .title {
-
+          display:block;
+          font-weight:900;
         }
 
         .finePrint {
-
+          font-size:0.8em;
+          padding:0;
+          margin:0;
         }
       }
     }

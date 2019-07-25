@@ -32,7 +32,8 @@ get_header();
                 <div class="threeFullColumn">
                     <div class="one fiber">
                         <div class="asset">
-                            <img src="https://dummyimage.com/300x200/000/fff.png" alt="" />
+                            <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/internet/fiber-orange.png"
+                                 alt="fiber internet cables" />
                         </div>
                         <div class="contain">
                             <h3 class="title">
@@ -55,7 +56,8 @@ get_header();
                     </div>
                     <div class="two wireless">
                         <div class="asset">
-                            <img src="https://dummyimage.com/300x200/000/fff.png" alt="" />
+                            <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/internet/wireless-orange.png"
+                                 alt="wirless internet tower" />
                         </div>
                         <div class="contain">
                             <h3 class="title">
@@ -78,7 +80,8 @@ get_header();
                     </div>
                     <div class="three dsl">
                         <div class="asset">
-                            <img src="https://dummyimage.com/300x200/000/fff.png" alt="" />
+                            <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/internet/dsl-towers-orange.png"
+                                 alt="dsl internet phone towers" />
                         </div>
                         <div class="contain">
                             <h3 class="title">

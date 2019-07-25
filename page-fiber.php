@@ -134,8 +134,10 @@ get_header();
                         </div>
                         <div class="right">
                             <h4>Equipment Rental/Purchase</h4>
-                            <img src=""
-                                 alt="" />
+                            <div class="router">
+                                <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/fiber/wireless-router.png"
+                                     alt="wireless router" />
+                            </div>
                             <div class="title">Wireless Router</div>
                             <p class="finePrint">$200 Purchase$10/Month Rental</p>
                         </div>
