@@ -225,9 +225,10 @@ header {
 # Home Page Specific
 --------------------------------------------------------------*/
 .homeSlider {
+  @include box-shadow(0px 19px 32px 3px rgba(0,0,0,.3));
   display:block;
-  background:pink;
   overflow:hidden;
+  background:white;
 
   .slick_slider {
     display:block;
@@ -243,32 +244,125 @@ header {
       display:inline-block;
 
       .left {
-        width:50%;
+        vertical-align:top;
+        width:45%;
         display:inline-block;
+        margin:2em 0 0 2em;
 
         h2 {
-          font-size:2.3em;
+          margin:0;
+          padding:0;
+          text-transform:uppercase;
+
+          .top {
+            font-weight:900;
+            color:#333;
+            display:block;
+            font-size:2em;
+          }
+
+          .bottom {
+            color:gray;
+            font-weight:500;
+            display:block;
+            font-size:1.8em;
+            margin-top:-27px;
+          }
         }
 
-        p {
-          font-size:1.5em;
-          line-height:1.5;
-          font-weight:300;
+        ul {
+          margin:0;
+          padding:0;
+          list-style-type:none;
+
+          li {
+            display:block;
+            font-size:1em;
+            line-height:2;
+            font-weight:100;
+          }
         }
 
         .priceAction {
           display:block;
 
-          .numbers {
-            font-weight:900;
-            font-size:2.3em;
+          .priceStats {
+            display:inline-block;
+            float:left;
+            width:27%;
+
+            .numbers {
+              font-weight:900;
+              font-size:3.5em;
+            }
+
+            .asterisks {
+              display:block;
+              font-size:0.9em;
+
+              .starting {
+                vertical-align:top;
+                display:inline-block;
+                text-align:left;
+              }
+
+              .month {
+                vertical-align:top;
+                display:inline-block;
+                float:right;
+              }
+            }
+          }
+
+          .learnMore {
+            display:inline-block;
+            float:right;
+            margin:3em;
+
+            a {
+              @include border-radius(5px);
+              background:$brand_orange;
+              color:white;
+              padding:1em 2em;
+              text-align:center;
+              text-transform:uppercase;
+              text-decoration:none;
+            }
           }
         }
       }
 
       .asset {
-        width:49%;
+        vertical-align:top;
+        width:35%;
+        float:right;
         display:inline-block;
+
+        img {
+          width:100%;
+          height:auto;
+        }
+      }
+
+      &.internet {
+        .top {
+          letter-spacing:12px;
+        }
+      }
+
+      &.voice {
+        .top {
+          letter-spacing:7px;
+        }
+
+        .bottom {
+          letter-spacing:-3px;
+          font-size:1.9em;
+        }
+
+        .asset {
+          margin:2em 2em 0 0;
+        }
       }
     }
   }
