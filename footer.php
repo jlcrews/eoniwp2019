@@ -21,12 +21,12 @@
         <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="<?=get_template_directory_uri() ?>/images/logo.png"
+            ><img src="<?=get_template_directory_uri() ?>/images/logo-blue.png"
                   alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" /></a>
         </div>
     </div>
     <div class="bottom">
-        <p>&copy; <?=date("Y").' '.get_bloginfo( 'name' )?> - Website By <a href="https://www.zachis.it" title="Zachary Smith Web Developer">zachis.it</a></p>
+        <p>&copy; <?=date("Y").' '.get_bloginfo( 'name' )?></p>
     </div>
 </footer>
 <?php wp_footer(); ?>

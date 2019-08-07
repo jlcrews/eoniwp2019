@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Fiber - Special Layout
+ * Template Name: Wireless - Special Layout
  *
  * @package eoni-wordpress
  */
@@ -25,9 +25,9 @@ get_header();
                            title="DSL">DSL</a>
                     </li>
                 </ul>
-                <div class="internalMarketingTemplate fiber">
+                <div class="internalMarketingTemplate wireless">
                     <div class="signupTop">
-                        <h2 class="title fiber">Residential Fiber Internet</h2>
+                        <h2 class="title wireless">Wireless</h2>
                         <div class="signupAction">
                             <a href=""
                                title="Sign Up"
@@ -37,7 +37,7 @@ get_header();
                     </div>
                     <div class="topExplainerPara">
                         <p>
-                            Fiber Internet takes high speed internet to another level. Say goodbye to cable and wireless internet, as DFN Fiber Internet combines unmatched speeds and reliability with 24/7 local support.   **Not available in all areas**
+                            Though we are terrific at providing DSL and fiber to hard to reach locations, for some, we are not yet in reach. For those customers, we offer high speed wireless internet! If you’ve had trouble getting fast internet, this may be your option!   **Not available in all areas**
                         </p>
                         <p>
                             Are you a low-income household that needs assistance with your monthly phone or broadband bill? Click Here!
@@ -45,80 +45,36 @@ get_header();
                     </div>
                     <div class="twoFullColumn">
                         <div class="dataRow">
-                            <div class="one fiftyMbps">
+                            <div class="one fiveMbps">
                                 <h3 class="title">
-                                    Up to 50Mbps
+                                    5Mbps
                                 </h3>
-                                <div class="underTitle">
-                                    <p>25Mbps Upload</p>
+                                <div class="underTitle justPrice">
+                                    <p><span class="price">$39.99</span>/month</p>
+                                </div>
+                                <ul class="itemizedPoints">
+                                    <li>Our most affordable internet</li>
+                                    <li>Great for emails and browsing</li>
+                                    <li>No phone line required</li>
+                                    <li>
+                                        <a href=""
+                                           title="Sign Up"
+                                           class="twoColSquareButton"
+                                        >Sign Up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="two fifteenMbps">
+                                <h3 class="title">
+                                    15Mbps
+                                </h3>
+                                <div class="underTitle underPrice">
                                     <p><span class="price">$49.99</span>/month</p>
                                 </div>
                                 <ul class="itemizedPoints">
-                                    <li>Great starting point</li>
-                                    <li>Good for 1 – 2 users</li>
-                                    <li>50Mbps</li>
-                                    <li>
-                                        <a href=""
-                                           title="Sign Up"
-                                           class="twoColSquareButton"
-                                        >Sign Up</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="two onehundredMbps">
-                                <h3 class="title">
-                                    Up to 100Mbps
-                                </h3>
-                                <div class="underTitle">
-                                    <p>25Mbps Upload</p>
-                                    <p><span class="price">$64.99</span>/month</p>
-                                </div>
-                                <ul class="itemizedPoints">
-                                    <li>Faster than Cable Internet</li>
                                     <li>Great speed for gaming</li>
-                                    <li>Stream HD content</li>
-                                    <li>
-                                        <a href=""
-                                           title="Sign Up"
-                                           class="twoColSquareButton"
-                                        >Sign Up</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="dataRow">
-                            <div class="one twofiftyMbps">
-                                <h3 class="title">
-                                    Up to 250Mbps
-                                </h3>
-                                <div class="underTitle">
-                                    <p>25Mbps Upload</p>
-                                    <p><span class="price">$89.99</span>/month</p>
-                                </div>
-                                <ul class="itemizedPoints">
-                                    <li>Fastest internet in Douglas County!</li>
-                                    <li>Security Cameras</li>
-                                    <li>For large homes with many devices</li>
-                                    <li>
-                                        <a href=""
-                                           title="Sign Up"
-                                           class="twoColSquareButton"
-                                        >Sign Up</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="two twofiftyMbps">
-                                <h3 class="title">
-                                    Up to 1Gbps
-                                </h3>
-                                <div class="underTitle">
-                                    <p>250Mbps Upload</p>
-                                    <p><span class="price">$109.99</span>/month</p>
-                                </div>
-                                <ul class="itemizedPoints">
-                                    <li>1,000Mbps</li>
-                                    <li>Engineered for Smart Homes</li>
-                                    <li>Because you want the fastest</li>
+                                    <li>2-3 Devices</li>
+                                    <li>No phone line required</li>
                                     <li>
                                         <a href=""
                                            title="Sign Up"
@@ -133,10 +89,17 @@ get_header();
                         <div class="left">
                             <h4>Installation Fees</h4>
                             <div class="priceWithText">
-                                <span class="price">$75</span>
-                                <span class="contractLength">with a 1 year contract*</span>
+                                <span class="price">$0</span>
+                                <span class="contractLength">with a 2 year contract</span>
                             </div>
-                            <div class="bottomAsterisk">*Line extension fee may apply</div>
+                            <div class="priceWithText">
+                                <span class="price">$75</span>
+                                <span class="contractLength">with a 1 year contract</span>
+                            </div>
+                            <div class="priceWithText">
+                                <span class="price">$100</span>
+                                <span class="contractLength">with no contract</span>
+                            </div>
                         </div>
                         <div class="right">
                             <h4>Equipment Rental/Purchase</h4>

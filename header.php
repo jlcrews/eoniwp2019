@@ -34,15 +34,16 @@
         <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="<?=get_template_directory_uri() ?>/images/logo.png"
+            ><img src="<?=get_template_directory_uri() ?>/images/logo-blue.png"
                   alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" />
             </a>
         </div>
         <div class="rightActions">
-            <div class="phone">(541) 685-4544</div>
+            <div class="phone">(541) 962-7873</div>
             <ul class="menu">
                 <li class="webmail">
-                    <a href="<?=home_url('')?>"
+                    <a href="https://mail.eoni.com/landing.php"
+                       target="_blank"
                        title="Webmail"
                     >Webmail</a>
                 </li>

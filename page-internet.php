@@ -10,14 +10,22 @@ get_header();
     <div class="wrapper">
         <div id="contentFull">
             <ul class="subMenu">
-                <li class="current"><a href=""
-                       title="Internet">Internet</a></li>
-                <li><a href=""
-                       title="Fiber">Fiber</a></li>
-                <li><a href=""
-                       title="Wireless">Wireless</a></li>
-                <li><a href=""
-                       title="DSL">DSL</a></li>
+                <li class="current">
+                    <a href=""
+                       title="Internet">Internet</a>
+                </li>
+                <li>
+                    <a href=""
+                       title="Fiber">Fiber</a>
+                </li>
+                <li>
+                    <a href=""
+                       title="Wireless">Wireless</a>
+                </li>
+                <li>
+                    <a href=""
+                       title="DSL">DSL</a>
+                </li>
             </ul>
             <div class="internalMarketingTemplate internet">
                 <div class="signupTop">
@@ -32,7 +40,8 @@ get_header();
                 <div class="threeFullColumn">
                     <div class="one fiber">
                         <div class="asset">
-                            <img src="https://dummyimage.com/300x200/000/fff.png" alt="" />
+                            <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/internet/fiber-blue.png"
+                                 alt="fiber internet cables" />
                         </div>
                         <div class="contain">
                             <h3 class="title">
@@ -55,7 +64,8 @@ get_header();
                     </div>
                     <div class="two wireless">
                         <div class="asset">
-                            <img src="https://dummyimage.com/300x200/000/fff.png" alt="" />
+                            <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/internet/wireless-blue.png"
+                                 alt="wirless internet tower" />
                         </div>
                         <div class="contain">
                             <h3 class="title">
@@ -78,7 +88,8 @@ get_header();
                     </div>
                     <div class="three dsl">
                         <div class="asset">
-                            <img src="https://dummyimage.com/300x200/000/fff.png" alt="" />
+                            <img src="<?=get_template_directory_uri() ?>/images/internal-marketing-pages/internet/dsl-towers-blue.png"
+                                 alt="dsl internet phone towers" />
                         </div>
                         <div class="contain">
                             <h3 class="title">

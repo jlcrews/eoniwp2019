@@ -105,11 +105,18 @@ a {
 }
 
 .greenSquareButton {
+  @include transition(500ms all ease);
   @include border-radius(3px);
-  background:green;
-  color:white;
+  background:$brand_new_yellow;
+  color:#333;
   padding:3px 8px;
   text-transform:lowercase;
+
+  &:hover {
+    @include transition(500ms all ease);
+    background:$brand_new_orange;
+    color:white;
+  }
 }
 
 /*--------------------------------------------------------------
