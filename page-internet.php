@@ -11,19 +11,19 @@ get_header();
         <div id="contentFull">
             <ul class="subMenu">
                 <li class="current">
-                    <a href=""
+                    <a href="<?=home_url('/internet')?>"
                        title="Internet">Internet</a>
                 </li>
                 <li>
-                    <a href=""
+                    <a href="<?=home_url('/internet/fiber/')?>"
                        title="Fiber">Fiber</a>
                 </li>
                 <li>
-                    <a href=""
+                    <a href="<?=home_url('/internet/wireless/')?>"
                        title="Wireless">Wireless</a>
                 </li>
                 <li>
-                    <a href=""
+                    <a href="<?=home_url('/internet/dsl/')?>"
                        title="DSL">DSL</a>
                 </li>
             </ul>

@@ -28,7 +28,7 @@ get_header() ?>
                             </div>
                         </div>
                         <div class="learnMore">
-                            <a href="<?=home_url('')?>"
+                            <a href="<?=home_url('/internet')?>"
                                title="Learn More"
                             >Learn More</a>
                         </div>
@@ -59,7 +59,7 @@ get_header() ?>
                             </div>
                         </div>
                         <div class="learnMore">
-                            <a href="<?=home_url('')?>"
+                            <a href="<?=home_url('/voice')?>"
                                title="Learn More"
                             >Learn More</a>
                         </div>

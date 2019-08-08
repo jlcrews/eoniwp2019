@@ -48,7 +48,7 @@
                     >Webmail</a>
                 </li>
                 <li class="myaccount">
-                    <a href="<?=home_url('')?>"
+                    <a href="<?=home_url('/my-account')?>"
                        title="My Account"
                     >My Account</a>
                 </li>

@@ -448,7 +448,7 @@ main {
 
     .signupTop {
       display:block;
-      margin:2.2em 0 0 0;
+      padding:2.2em 0 0 0;
 
       .title {
         font-size:2em;
@@ -975,6 +975,53 @@ main {
                 font-size:1.3em;
               }
             }
+          }
+        }
+      }
+    }
+
+    &.hostedVoice {
+
+      .whyChoose {
+        display:block;
+
+        .phones {
+          width:40%;
+          display:inline-block;
+
+          .phoneOne {
+            margin:0 0 2em 0;
+          }
+
+          img {
+            width:100%;
+            height:auto;
+          }
+        }
+
+        .why {
+          width:55%;
+          display:inline-block;
+          float:right;
+          vertical-align:top;
+
+          ul {
+            margin:0 0 0 2em;
+
+            li {
+              margin:0 0 1em 0;
+              line-height:1.34;
+            }
+          }
+        }
+
+        .hosted {
+          display:block;
+          margin:2em 0 0 0;
+          text-align:center;
+
+          h3 {
+            font-size:1.5em;
           }
         }
       }
