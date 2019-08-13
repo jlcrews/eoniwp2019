@@ -19,7 +19,7 @@ get_header();
                     <div class="signupTop">
                         <h2 class="title">Residential Voice</h2>
                         <div class="signupAction">
-                            <a href=""
+                            <a href="<?=home_url('/sign-up')?>"
                                title="Sign Up"
                                class="greenSquareButton"
                             >Sign Up</a>
@@ -45,7 +45,7 @@ get_header();
                                 <li>Unlimited Local Calling</li>
                                 <li>200 Minutes of Contiguous US Calling</li>
                                 <li>
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="twoColSquareButton"
                                     >Sign Up</a>
@@ -63,7 +63,7 @@ get_header();
                                 <li>Unlimited Local Calling</li>
                                 <li>Unlimited Contiguous US Calling</li>
                                 <li>
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="twoColSquareButton"
                                     >Sign Up</a>
@@ -81,7 +81,7 @@ get_header();
                                 <li>Unlimited Local Calling</li>
                                 <li>Long Distance and Features are extra</li>
                                 <li>
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="twoColSquareButton"
                                     >Sign Up</a>

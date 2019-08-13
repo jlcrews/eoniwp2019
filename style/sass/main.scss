@@ -167,6 +167,15 @@ header {
       }
 
       &.current_page_item {
+        position:relative;
+
+        &:after {
+          content:url('https://stage.eoni.com/wp-content/themes/eoni-twentynineteen/images/menu_triangle.png');
+          color:black;
+          position:absolute;
+          bottom:-32px;
+          left:43%;
+        }
 
         a {
           color:#9a9a9a;
@@ -412,15 +421,6 @@ main {
       margin:0 1.5em 0 0;
 
       &.current {
-
-        &:before {
-          content:'^';
-          position:absolute;
-          top:-31px;
-          left:73px;
-          font-size:3em;
-          color:$brand_orange;
-        }
 
         a {
           font-weight:900;

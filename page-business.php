@@ -35,7 +35,7 @@ get_header();
                         </div>
                         <div class="right">
                             <div class="signupAction">
-                                <a href=""
+                                <a href="<?=home_url('/sign-up')?>"
                                    title="Sign Up"
                                    class="greenSquareButton"
                                 >Sign Up</a>
@@ -91,7 +91,7 @@ get_header();
                                     <li>Ideal for internet based phone systems</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -112,7 +112,7 @@ get_header();
                                     <li>Video Conferencing</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -133,7 +133,7 @@ get_header();
                                     <li>Offsite Backup</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -167,7 +167,7 @@ get_header();
                                     <li>10 Email Accounts</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -186,7 +186,7 @@ get_header();
                                     <li>20 Add-On Domains</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -206,7 +206,7 @@ get_header();
                                     <li>Static IP Address</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>

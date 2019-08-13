@@ -13,7 +13,7 @@ get_header();
                     <div class="signupTop">
                         <h2 class="title">Hosted Voice</h2>
                         <div class="signupAction">
-                            <a href=""
+                            <a href="<?=home_url('/sign-up')?>"
                                title="Sign Up"
                                class="greenSquareButton"
                             >Sign Up</a>

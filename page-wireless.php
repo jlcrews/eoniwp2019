@@ -31,7 +31,7 @@ get_header();
                     <div class="signupTop">
                         <h2 class="title wireless">Wireless</h2>
                         <div class="signupAction">
-                            <a href=""
+                            <a href="<?=home_url('/sign-up')?>"
                                title="Sign Up"
                                class="greenSquareButton"
                             >Sign Up</a>
@@ -59,7 +59,7 @@ get_header();
                                     <li>Great for emails and browsing</li>
                                     <li>No phone line required</li>
                                     <li>
-                                        <a href=""
+                                        <a href="<?=home_url('/sign-up')?>"
                                            title="Sign Up"
                                            class="twoColSquareButton"
                                         >Sign Up</a>
@@ -78,7 +78,7 @@ get_header();
                                     <li>2-3 Devices</li>
                                     <li>No phone line required</li>
                                     <li>
-                                        <a href=""
+                                        <a href="<?=home_url('/sign-up')?>"
                                            title="Sign Up"
                                            class="twoColSquareButton"
                                         >Sign Up</a>
