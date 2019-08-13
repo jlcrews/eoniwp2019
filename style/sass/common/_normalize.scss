@@ -231,3 +231,21 @@ video {
     }
   }
 }
+
+form {
+
+  label {
+    font-weight:500 !important;
+  }
+
+  input, select, textarea {
+    @include border-radius(5px);
+    border:1px solid #ccc;
+    width:100% !important;
+
+    &:focus {
+      outline:none;
+      border:1px solid $brand_orange;
+    }
+  }
+}

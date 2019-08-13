@@ -169,7 +169,8 @@ header {
       &.current_page_item {
 
         a {
-          color:#969595;
+          color:#9a9a9a;
+          font-weight:100;
         }
       }
     }
@@ -469,9 +470,97 @@ main {
       }
     }
 
+    .priceWithText {
+      @include border-radius(5px);
+      background:$brand_orange;
+      color:white;
+      text-align:center;
+      min-height:64px;
+      margin:0 0 1em 0;
+
+      .price {
+        font-size:2.7em;
+        display:inline-block;
+        width:20%;
+      }
+
+      .contractLength {
+        @include border-radius(5px);
+        margin:9px 2px 0 0;
+        padding:0.2em;
+        color:#333;
+        background:$brand_new_yellow;
+        font-size:1.6em;
+        display:inline-block;
+        width:70%;
+        float:right;
+      }
+    }
+
     .topExplainerPara {
       display:block;
       margin-bottom:5em;
+    }
+
+    .columnLayout {
+
+      .title {
+        color:white;
+        text-align:center;
+        font-size:2em;
+        padding:0.2em 0;
+        margin:0;
+      }
+
+      .underTitle {
+        background:$brand_orange;
+        text-align:center;
+        padding:1em 0;
+        color:white;
+        font-size:1.3em;
+
+        .price {
+          font-size:2.5em;
+          display:block;
+        }
+      }
+
+      .itemizedPoints {
+        background:#e3e3e3;
+        list-style-type:none;
+        margin:0;
+        padding:1em 0;
+
+        li {
+          display:block;
+          text-align:center;
+          margin:0 0 2em 0;
+
+          &:last-of-type {
+            margin:0;
+          }
+
+          .twoColSquareButton {
+            @include transition(400ms all ease);
+            @include border-radius(5px);
+            background:$brand_new_yellow;
+            text-align:center;
+            font-size:1.3em;
+            padding:0.4em 0;
+            margin:1em 3em;
+            color:#333;
+            text-transform:uppercase;
+            text-decoration:none;
+            display:block;
+
+            &:hover {
+              @include transition(400ms all ease);
+              background:$brand_orange;
+              color:white;
+            }
+          }
+        }
+      }
     }
 
     /*
@@ -573,62 +662,6 @@ main {
         margin:0 0 1em 0;
         min-height:630px;
 
-        .columnLayout {
-
-          .title {
-            color:white;
-            text-align:center;
-            font-size:2em;
-            padding:0.2em 0;
-          }
-
-          .underTitle {
-            background:$brand_orange;
-            text-align:center;
-            padding:1em 0;
-            color:gray;
-            font-size:1.3em;
-
-            .price {
-              font-size:2.5em;
-              color:white;
-              display:block;
-            }
-          }
-
-          .itemizedPoints {
-            background:#e3e3e3;
-            list-style-type:none;
-            margin:0;
-            padding:1em 0;
-
-            li {
-              display:block;
-              text-align:center;
-              margin:0 0 2em 0;
-
-              .twoColSquareButton {
-                @include transition(400ms all ease);
-                @include border-radius(5px);
-                background:$brand_orange;
-                text-align:center;
-                font-size:1.3em;
-                padding:0.4em 0;
-                margin:1em 3em;
-                color:white;
-                text-transform:uppercase;
-                text-decoration:none;
-                display:block;
-
-                &:hover {
-                  @include transition(400ms all ease);
-                  background:$brand_gray;
-                }
-              }
-            }
-          }
-        }
-
         .one {
           @include border-radius(10px);
           float:left;
@@ -659,31 +692,6 @@ main {
 
         h4 {
           font-size:2em;
-        }
-
-        .priceWithText {
-          @include border-radius(5px);
-          background:$brand_orange;
-          color:white;
-          text-align:center;
-          min-height:64px;
-
-          .price {
-            font-size:2.7em;
-            display:inline-block;
-            width:20%;
-          }
-
-          .contractLength {
-            @include border-radius(5px);
-            margin:9px 2px 0 0;
-            padding:0.2em;
-            background:green;
-            font-size:1.6em;
-            display:inline-block;
-            width:70%;
-            float:right;
-          }
         }
 
         .bottomAsterisk {
@@ -728,7 +736,6 @@ main {
       }
 
       .priceWithText {
-        margin-bottom:2em;
 
         .price {
           padding-top:10px;
@@ -1026,6 +1033,133 @@ main {
         }
       }
     }
+
+    &.dsl {
+
+      .leftSidebarColumn {
+        display:block;
+
+        .left {
+          vertical-align:top;
+          width:20%;
+          display:inline-block;
+
+          //@TODO:move below into mixin
+          .one {
+            @include border-radius(10px);
+            float:left;
+            width:300px;
+            background:$brand_gray;
+
+            @extend .columnLayout;
+          }
+        }
+
+        .right {
+          float:right;
+          display:inline-block;
+          width:55%;
+
+          h4 {
+            font-size:1.5em;
+          }
+
+          .installFees {
+            display:block;
+            margin:0 0 4em 0;
+          }
+
+          .equip {
+
+            .wirelessSec, .wiredSec {
+              display:inline-block;
+              vertical-align:top;
+              width:40%;
+
+              .router {
+                height:112px;
+                position:relative;
+
+                img {
+                  position:absolute;
+                  bottom:0;
+                  width:100%;
+                  height:auto;
+                }
+              }
+
+              .finePrint {
+                font-size:0.7em;
+                font-style:italic;
+              }
+            }
+
+            .wiredSec {
+              float:right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.internalDefaultPage {
+
+    ul {
+      margin:0 0 0 2em;
+      list-style-type:none;
+
+      //li {
+      //  font-size:1.1em;
+      //  line-height:1.5;
+      //  margin:0 0 0.5em 0;
+      //
+      //  &:before {
+      //    content:'*';
+      //    color:$brand_new_orange;
+      //    margin:0;
+      //    padding:0 0.5em 0 0;
+      //  }
+      //}
+    }
+
+    a {
+      @include transition(500ms all ease);
+      color:$brand_new_orange;
+      font-weight:700;
+
+      &:hover {
+        @include transition(500ms all ease);
+        text-decoration:underline;
+        color:$brand_orange;
+      }
+    }
+
+    p {
+      font-size:1.1em;
+      line-height:1.5;
+      color:#333;
+    }
+
+    &.support {
+
+      .supportLeft {
+        display:inline-block;
+        width:30%;
+
+        ul {
+          margin:0;
+          padding:0;
+        }
+      }
+
+      .supportRight {
+        display:inline-block;
+        width:60%;
+        float:right;
+        vertical-align:top;
+      }
+    }
   }
 }
 
@@ -1055,6 +1189,7 @@ footer {
       .menuItemList {
         display:inline-block;
         margin:0 1em 0 0;
+        vertical-align:top;
         width:22%;
 
         &:last-of-type {
@@ -1069,9 +1204,10 @@ footer {
           margin:0 0 0.2em 0;
         }
 
-        .menu {
+        .menu, .menu-footer-first-container, .menu-footer-second-container, .menu-footer-three-container, .menu-footer-four-container {
 
           ul {
+            vertical-align:top;
             list-style-type:none;
             margin:0;
             padding:0;

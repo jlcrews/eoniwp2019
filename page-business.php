@@ -11,19 +11,19 @@ get_header();
             <div id="contentFull">
                 <ul class="subMenu">
                     <li>
-                        <a href=""
+                        <a href="#businessFiberInternet"
                            title="Internet">Internet</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#voiceSolutions"
                            title="Voice">Voice</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="<?=home_url('/hosted-voice')?>"
                            title="Hosted Voice">Hosted Voice</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#webEmailHosting"
                            title="Hosting">Hosting</a>
                     </li>
                 </ul>
@@ -42,7 +42,8 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <div class="voiceSolutions">
+                    <div id="voiceSolutions"
+                         class="voiceSolutions">
                         <h2 class="voice">Voice Solutions</h2>
                         <div class="left">
                             <h3>Business Voice</h3>
@@ -71,7 +72,8 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <div class="businessFiberInternet">
+                    <div id="businessFiberInternet"
+                         class="businessFiberInternet">
                         <h2 class="businessFiberInternet">Business Fiber Internet</h2>
                         <div class="rowsContainer">
                             <div class="mps one">
@@ -149,7 +151,8 @@ get_header();
                                  alt="ethernet internet cables" />
                         </div>
                     </div>
-                    <div class="webEmailHosting">
+                    <div id="webEmailHosting"
+                         class="webEmailHosting">
                         <h2 class="webEmailHost">Web/Email Hosting Solutions</h2>
                         <div class="optionList">
                             <div class="option basic">
