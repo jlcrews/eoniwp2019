@@ -34,7 +34,7 @@
         <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="<?=get_template_directory_uri() ?>/images/logo-blue.png"
+            ><img src="<?=get_template_directory_uri() ?>/images/logo-blue-orange.png"
                   alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" />
             </a>
         </div>
@@ -57,10 +57,6 @@
     </div>
     <button id="menu_btn"></button>
     <div id="menu">
-        <button id="menu_close"></button>
-        <div id="search_mobile">
-            <?php get_search_form()?>
-        </div>
         <?php wp_nav_menu(['theme_location' => 'header_menu','menu_id' => 'primary-menu'])?>
     </div>
 </header>

@@ -29,9 +29,9 @@ get_header();
                 </ul>
                 <div class="internalMarketingTemplate fiber">
                     <div class="signupTop">
-                        <h2 class="title fiber">Residential Fiber Internet</h2>
+                        <h2 class="styledHeader fiber">Residential Fiber Internet</h2>
                         <div class="signupAction">
-                            <a href=""
+                            <a href="<?=home_url('/sign-up')?>"
                                title="Sign Up"
                                class="greenSquareButton"
                             >Sign Up</a>
@@ -60,7 +60,7 @@ get_header();
                                     <li>Good for 1 – 2 users</li>
                                     <li>50Mbps</li>
                                     <li>
-                                        <a href=""
+                                        <a href="<?=home_url('/sign-up')?>"
                                            title="Sign Up"
                                            class="twoColSquareButton"
                                         >Sign Up</a>
@@ -80,7 +80,7 @@ get_header();
                                     <li>Great speed for gaming</li>
                                     <li>Stream HD content</li>
                                     <li>
-                                        <a href=""
+                                        <a href="<?=home_url('/sign-up')?>"
                                            title="Sign Up"
                                            class="twoColSquareButton"
                                         >Sign Up</a>
@@ -122,7 +122,7 @@ get_header();
                                     <li>Engineered for Smart Homes</li>
                                     <li>Because you want the fastest</li>
                                     <li>
-                                        <a href=""
+                                        <a href="<?=home_url('/sign-up')?>"
                                            title="Sign Up"
                                            class="twoColSquareButton"
                                         >Sign Up</a>

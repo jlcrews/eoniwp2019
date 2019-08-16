@@ -17,9 +17,9 @@ get_header();
                 </ul>
                 <div class="internalMarketingTemplate residentialVoice">
                     <div class="signupTop">
-                        <h2 class="title">Residential Voice</h2>
+                        <h2 class="styledHeader voice">Residential Voice</h2>
                         <div class="signupAction">
-                            <a href=""
+                            <a href="<?=home_url('/sign-up')?>"
                                title="Sign Up"
                                class="greenSquareButton"
                             >Sign Up</a>
@@ -35,7 +35,7 @@ get_header();
                     </div>
                     <div class="lineRows">
                         <div class="line standard">
-                            <h3>Standard Line</h3>
+                            <h3 class="title">Standard Line</h3>
                             <div class="amount">
                                 <span class="price">$19.99*</span>
                                 /month
@@ -45,7 +45,7 @@ get_header();
                                 <li>Unlimited Local Calling</li>
                                 <li>200 Minutes of Contiguous US Calling</li>
                                 <li>
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="twoColSquareButton"
                                     >Sign Up</a>
@@ -53,7 +53,7 @@ get_header();
                             </ul>
                         </div>
                         <div class="line premium">
-                            <h3>Premium Line</h3>
+                            <h3 class="title">Premium Line</h3>
                             <div class="amount">
                                 <span class="price">$29.99*</span>
                                 /month
@@ -63,7 +63,7 @@ get_header();
                                 <li>Unlimited Local Calling</li>
                                 <li>Unlimited Contiguous US Calling</li>
                                 <li>
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="twoColSquareButton"
                                     >Sign Up</a>
@@ -71,7 +71,7 @@ get_header();
                             </ul>
                         </div>
                         <div class="line standalone">
-                            <h3>Stand-Alone Line</h3>
+                            <h3 class="title">Stand-Alone Line</h3>
                             <div class="amount">
                                 <span class="price">$34.99*</span>
                                 /month
@@ -81,7 +81,7 @@ get_header();
                                 <li>Unlimited Local Calling</li>
                                 <li>Long Distance and Features are extra</li>
                                 <li>
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="twoColSquareButton"
                                     >Sign Up</a>

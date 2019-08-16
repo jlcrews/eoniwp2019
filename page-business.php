@@ -30,12 +30,12 @@ get_header();
                 <div class="internalMarketingTemplate business">
                     <div class="signupTop">
                         <div class="left">
-                            <h2 class="title">Business Services</h2>
+                            <h2 class="styledHeader businessServices">Business Services</h2>
                             <p>DFN’s large fiber network allows us to offer robust Business Services including fiber internet, data networking, managed IT services, web/email hosting, and voice communications.</p>
                         </div>
                         <div class="right">
                             <div class="signupAction">
-                                <a href=""
+                                <a href="<?=home_url('/sign-up')?>"
                                    title="Sign Up"
                                    class="greenSquareButton"
                                 >Sign Up</a>
@@ -44,7 +44,7 @@ get_header();
                     </div>
                     <div id="voiceSolutions"
                          class="voiceSolutions">
-                        <h2 class="voice">Voice Solutions</h2>
+                        <h2 class="styledHeader voice">Voice Solutions</h2>
                         <div class="left">
                             <h3>Business Voice</h3>
                             <ul>
@@ -74,7 +74,7 @@ get_header();
                     </div>
                     <div id="businessFiberInternet"
                          class="businessFiberInternet">
-                        <h2 class="businessFiberInternet">Business Fiber Internet</h2>
+                        <h2 class="styledHeader fiber">Business Fiber Internet</h2>
                         <div class="rowsContainer">
                             <div class="mps one">
                                 <div class="title">
@@ -91,7 +91,7 @@ get_header();
                                     <li>Ideal for internet based phone systems</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -112,7 +112,7 @@ get_header();
                                     <li>Video Conferencing</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -133,7 +133,7 @@ get_header();
                                     <li>Offsite Backup</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -143,7 +143,7 @@ get_header();
                     </div>
                     <div class="metroEthernet">
                         <div class="left">
-                            <h3>Metro Ethernet</h3>
+                            <h2 class="styledHeader ethernet">Metro Ethernet</h2>
                             <p>Does your business have multiple buildings that need to connect like they are all under the same roof? With DFN’s large fiber network, we can network you with up to 10Gbps between your locations. Call us today for a custom quote!</p>
                         </div>
                         <div class="right">
@@ -153,7 +153,7 @@ get_header();
                     </div>
                     <div id="webEmailHosting"
                          class="webEmailHosting">
-                        <h2 class="webEmailHost">Web/Email Hosting Solutions</h2>
+                        <h2 class="styledHeader hosting">Web/Email Hosting Solutions</h2>
                         <div class="optionList">
                             <div class="option basic">
                                 <h3>Basic</h3>
@@ -167,7 +167,7 @@ get_header();
                                     <li>10 Email Accounts</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -186,7 +186,7 @@ get_header();
                                     <li>20 Add-On Domains</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>
@@ -206,7 +206,7 @@ get_header();
                                     <li>Static IP Address</li>
                                 </ul>
                                 <div class="signup">
-                                    <a href=""
+                                    <a href="<?=home_url('/sign-up')?>"
                                        title="Sign Up"
                                        class="greenSquareButton"
                                     >Sign Up</a>

@@ -21,7 +21,7 @@
         <div class="logo">
             <a href="<?=home_url()?>"
                title="<?=home_url()?> Home"
-            ><img src="<?=get_template_directory_uri() ?>/images/logo-blue.png"
+            ><img src="<?=get_template_directory_uri() ?>/images/logo-blue-orange.png"
                   alt="<?=get_bloginfo('name')?> - <?=get_home_url()?> Logo" /></a>
         </div>
     </div>

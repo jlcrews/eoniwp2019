@@ -29,9 +29,9 @@ get_header();
                 </ul>
                 <div class="internalMarketingTemplate dsl">
                     <div class="signupTop">
-                        <h2 class="title wireless">DSL</h2>
+                        <h2 class="styledHeader internet">DSL</h2>
                         <div class="signupAction">
-                            <a href=""
+                            <a href="<?=home_url('/sign-up')?>"
                                title="Sign Up"
                                class="greenSquareButton"
                             >Sign Up</a>
@@ -62,7 +62,7 @@ get_header();
                                     <li>Up to 40Mbps</li>
                                     <li>Delivered over existing phone lines</li>
                                     <li>
-                                        <a href=""
+                                        <a href="<?=home_url('/sign-up')?>"
                                            title="Sign Up"
                                            class="twoColSquareButton"
                                         >Sign Up</a>

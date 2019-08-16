@@ -43,6 +43,12 @@ header {
       width:440px;
       margin:0.5em 0 0 0;
 
+      @include bp_phone {
+        display:block;
+        float:unset;
+        width:auto;
+      }
+
       .phone {
         font-size:2.1em;
         font-weight:900;
@@ -50,11 +56,19 @@ header {
         text-align:right;
         color:$headlineDarkGray;
         font-family:'Open Sans',sans-serif;
+
+        @include bp_phone {
+          text-align:center;
+        }
       }
 
       .menu {
         text-align:right;
         list-style-type:none;
+
+        @include bp-phone {
+          text-align:center;
+        }
 
         li {
           margin:0 1em 0 0;
@@ -109,7 +123,7 @@ header {
 }
 
 #menu_btn {
-  @include font-awesome-declaration('after', '\f0c9', 2.934em, null, $error_red, null) {
+  @include font-awesome-declaration('after', '\f0c9', 2.934em, null, black, null) {
     float:left;
   };
   background:none;
@@ -117,7 +131,7 @@ header {
   outline:none;
   display:none;
   margin:0;
-  top:4em;
+  top:5px;
   right:2%;
   border:none;
   position:absolute;
@@ -132,14 +146,13 @@ header {
   padding:1em 0;
   background:#e3e3e3;
 
-  @include bp-small {
-    background:black;
-    width:100%;
-    float:left;
-    top:2%;
-    z-index:999;
-    position:fixed;
-    bottom:0;
+  @include bp_phone {
+    display:none;
+    background:$brand_new_orange;
+
+    &.open {
+      display:block;
+    }
   }
 
   .menu {
@@ -147,16 +160,26 @@ header {
 
     li {
       display:inline-block;
-      //margin:0 1.3em 0 0;
       width:19%;
       text-align:center;
       position:relative;
+
+      @include bp_phone {
+        width:100%;
+        display:block;
+      }
 
       a {
         font-size:1.7em;
         font-weight:900;
         color:$headlineDarkGray;
         text-transform:uppercase;
+
+        @include bp_phone {
+          text-align:center;
+          color:white;
+          font-weight:500;
+        }
       }
 
       &:hover {
@@ -167,55 +190,25 @@ header {
       }
 
       &.current_page_item {
+        position:relative;
+
+        @include bp_phone {
+          &:after {
+            display:none;
+          }
+        }
+
+        &:after {
+          content:url('https://stage.eoni.com/wp-content/themes/eoni-twentynineteen/images/menu_triangle.png');
+          color:black;
+          position:absolute;
+          bottom:-32px;
+          left:43%;
+        }
 
         a {
           color:#9a9a9a;
           font-weight:100;
-        }
-      }
-    }
-
-    .sub-menu {
-      display:none;
-      position:absolute;
-      background:#096cc8;
-      border:1px solid #ccc;
-      padding:0;
-      width:200px;
-      z-index:2;
-
-      @include bp-small {
-        background:none;
-        position:relative;
-        border-top:1px solid #ccc;
-        border-bottom:1px solid #ccc;
-        width:100%;
-        margin:0.5em 0 0 0;
-        float:left;
-        padding:0.5em 0;
-      }
-
-      li {
-        display:block;
-        float:left;
-        padding:0.5em 0 0.5em 0.5em;
-        width:95%;
-        border-bottom:1px solid white;
-
-        @include bp-small {
-          width:100%;
-          border:none;
-          padding:0;
-          margin:0;
-        }
-
-        a {
-          color:white;
-
-          &:hover {
-            text-decoration:none;
-            color:black;
-          }
         }
       }
     }
@@ -346,6 +339,7 @@ header {
       }
 
       &.internet {
+
         .top {
           letter-spacing:12px;
         }
@@ -411,16 +405,13 @@ main {
       display:inline-block;
       margin:0 1.5em 0 0;
 
-      &.current {
+      @include bp_phone {
+        margin:0 0 0.5em 0;
+        display:block;
+        text-align:center;
+      }
 
-        &:before {
-          content:'^';
-          position:absolute;
-          top:-31px;
-          left:73px;
-          font-size:3em;
-          color:$brand_orange;
-        }
+      &.current {
 
         a {
           font-weight:900;
@@ -447,19 +438,59 @@ main {
     margin:auto;
     width:90%;
 
+    .styledHeader {
+      padding:0 0 0 60px;
+      font-size:2em;
+      font-weight:500;
+      display:inline-block;
+      text-transform:uppercase;
+      background-repeat:no-repeat;
+      background-size:48px;
+
+      @include bp_phone {
+        line-height:1;
+        font-size:1.5em;
+        min-height:53px;
+      }
+
+      &.businessServices {
+        background-image:url('/wp-content/themes/eoni-twentynineteen/images/internal-marketing-pages/business/phone-lines-icon.png');
+      }
+
+      &.internet {
+        background-image:url('/wp-content/themes/eoni-twentynineteen/images/internal-marketing-pages/internet/fiber-icon.png');
+      }
+
+      &.voice {
+        background-image:url('/wp-content/themes/eoni-twentynineteen/images/internal-marketing-pages/hosted-voice/voice-icon.png');
+      }
+
+      &.fiber {
+        background-image:url('/wp-content/themes/eoni-twentynineteen/images/internal-marketing-pages/internet/fiber-icon.png');
+      }
+
+      &.ethernet {
+        background-image:url('/wp-content/themes/eoni-twentynineteen/images/internal-marketing-pages/business/ethernet-icon.png');
+      }
+
+      &.hosting {
+        background-image:url('/wp-content/themes/eoni-twentynineteen/images/internal-marketing-pages/business/hosting-icon.png');
+      }
+    }
+
     .signupTop {
       display:block;
-      padding:2.2em 0 0 0;
-
-      .title {
-        font-size:2em;
-        font-weight:700;
-        display:inline-block;
-        text-transform:uppercase;
-      }
+      padding:0;
+      margin:2em 0;
 
       .signupAction {
         float:right;
+        margin:10px 0 0 0;
+
+        @include bp_phone {
+          float:unset;
+          text-align:center;
+        }
 
         .greenSquareButton {
           @include border-radius(3px);
@@ -478,22 +509,34 @@ main {
       min-height:64px;
       margin:0 0 1em 0;
 
+      @include bp_phone {
+        min-height:auto;
+      }
+
       .price {
         font-size:2.7em;
         display:inline-block;
         width:20%;
+
+        @include bp_phone {
+          font-size:2em;
+        }
       }
 
       .contractLength {
         @include border-radius(5px);
-        margin:9px 2px 0 0;
+        margin:9px 7px 0 0;
         padding:0.2em;
         color:#333;
         background:$brand_new_yellow;
-        font-size:1.6em;
+        font-size:1.4em;
         display:inline-block;
-        width:70%;
+        width:66%;
         float:right;
+
+        @include bp_phone {
+          font-size:1em;
+        }
       }
     }
 
@@ -575,6 +618,11 @@ main {
         display:inline-block;
         width:32.5%;
 
+        @include bp_phone {
+          width:100%;
+          display:block;
+        }
+
         .asset {
           width:100%;
           display:block;
@@ -635,8 +683,17 @@ main {
         @extend .one;
         border-left:1px solid #333;
 
+        @include bp_phone {
+          border:none;
+          margin:2em 0;
+        }
+
         .contain {
           margin:0 0 0 2em;
+
+          @include bp_phone {
+            margin:0;
+          }
         }
       }
 
@@ -644,8 +701,16 @@ main {
         @extend .one;
         border-left:1px solid #333;
 
+        @include bp_phone {
+          border:none;
+        }
+
         .contain {
           margin:0 0 0 2em;
+
+          @include bp_phone {
+            margin:0;
+          }
         }
       }
     }
@@ -668,6 +733,13 @@ main {
           width:300px;
           background:$brand_gray;
 
+          @include bp_phone {
+            width:100%;
+            float:unset;
+            display:block;
+            margin:0 0 2em 0;
+          }
+
           @extend .columnLayout;
         }
 
@@ -676,6 +748,12 @@ main {
           float:right;
           width:300px;
           background:$brand_gray;
+
+          @include bp_phone {
+            width:100%;
+            float:unset;
+            display:block;
+          }
 
           @extend .columnLayout;
         }
@@ -689,6 +767,12 @@ main {
         width:40%;
         float:left;
         display:inline-block;
+
+        @include bp_phone {
+          display:block;
+          float:unset;
+          width:100%;
+        }
 
         h4 {
           font-size:2em;
@@ -707,6 +791,12 @@ main {
         display:inline-block;
         width:40%;
         margin-bottom:4em;
+
+        @include bp_phone {
+          display:block;
+          float:unset;
+          width:100%;
+        }
 
         .router {
           width:66%;
@@ -733,6 +823,10 @@ main {
     &.wireless {
       .one, .two {
         width:44% !important;
+
+        @include bp_phone {
+          width:100% !important;
+        }
       }
 
       .priceWithText {
@@ -753,6 +847,11 @@ main {
           display:inline-block;
           vertical-align:top;
           width:50%;
+
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
         }
 
         .right {
@@ -760,6 +859,11 @@ main {
           vertical-align:top;
           width:auto;
           float:right;
+
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
         }
       }
 
@@ -768,6 +872,10 @@ main {
         padding:1em 0;
         border-bottom:1px solid #ccc;
         height:400px;
+
+        @include bp_phone {
+          height:auto;
+        }
 
         h3 {
           font-size:2.2em;
@@ -784,6 +892,11 @@ main {
           width:39%;
           display:inline-block;
 
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
+
           ul {
             list-style-type:none;
             margin:0;
@@ -796,6 +909,11 @@ main {
           width:39%;
           float:right;
           display:inline-block;
+
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
 
           .learnMore {
             margin:1em 0;
@@ -816,6 +934,11 @@ main {
             display:inline-block;
             text-align:center;
             color:white;
+
+            @include bp_phone {
+              width:100%;
+              display:block;
+            }
 
             .title {
               font-size:2em;
@@ -883,6 +1006,11 @@ main {
           display:inline-block;
           vertical-align:top;
 
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
+
           h3 {
             font-size:2em;
             margin:0 0 0.5em 0;
@@ -898,6 +1026,11 @@ main {
           width:38%;
           float:right;
           display:inline-block;
+
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
 
           img {
             width:100%;
@@ -919,6 +1052,10 @@ main {
           padding:0;
           list-style-type:none;
 
+          @include bp_phone {
+            float:unset;
+          }
+
           .option {
             @include border-radius(5px);
             width:220px;
@@ -928,6 +1065,11 @@ main {
             display:inline-block;
             margin:0 1em 0 0;
             vertical-align:top;
+
+            @include bp_phone {
+              width:100%;
+              display:block;
+            }
 
             &:last-of-type {
               margin:0;
@@ -996,6 +1138,10 @@ main {
           width:40%;
           display:inline-block;
 
+          @include bp_phone {
+            display:none;
+          }
+
           .phoneOne {
             margin:0 0 2em 0;
           }
@@ -1011,6 +1157,12 @@ main {
           display:inline-block;
           float:right;
           vertical-align:top;
+
+          @include bp_phone {
+            width:100%;
+            float:unset;
+            display:block;
+          }
 
           ul {
             margin:0 0 0 2em;
@@ -1044,12 +1196,23 @@ main {
           width:20%;
           display:inline-block;
 
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
+
           //@TODO:move below into mixin
           .one {
             @include border-radius(10px);
             float:left;
             width:300px;
             background:$brand_gray;
+
+            @include bp_phone {
+              width:100%;
+              display:block;
+              float:unset;
+            }
 
             @extend .columnLayout;
           }
@@ -1059,6 +1222,11 @@ main {
           float:right;
           display:inline-block;
           width:55%;
+
+          @include bp_phone {
+            width:100%;
+            display:block;
+          }
 
           h4 {
             font-size:1.5em;
@@ -1101,9 +1269,106 @@ main {
         }
       }
     }
+
+    &.residentialVoice {
+
+      .line {
+        @include border-radius(5px);
+        background:$brand_orange;
+        width:32.8%;
+        display:inline-block;
+        text-align:center;
+        color:white;
+
+        @include bp_phone {
+          width:100%;
+          display:block;
+          margin:0 0 1em 0;
+        }
+
+        .title {
+          font-size:2em;
+          padding:0.4em 0;
+          font-weight:800;
+        }
+
+        .amount {
+          background:gray;
+          padding:1em 0;
+          display:block;
+
+          .price {
+            font-size:3em;
+            display:block;
+            font-weight:900;
+          }
+
+          .under {
+            font-size:1.2em;
+            display:block;
+          }
+
+          .asterisk {
+            font-size:0.7em;
+            line-height:0.9;
+            padding:0 1%;
+          }
+        }
+
+        .itemizedPoints {
+          background:#e3e3e3;
+          list-style-type:none;
+          padding:1em 0;
+          margin:0;
+          color:#333;
+
+          li {
+            margin:0 0 3em 0;
+
+            .twoColSquareButton {
+              @include transition(400ms all ease);
+              @include border-radius(5px);
+              background:$brand_new_yellow;
+              text-align:center;
+              font-size:1.3em;
+              padding:0.4em 0;
+              margin:1em 3em;
+              color:#333;
+              text-transform:uppercase;
+              text-decoration:none;
+              display:block;
+
+              &:hover {
+                @include transition(400ms all ease);
+                background:$brand_orange;
+                color:white;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   &.internalDefaultPage {
+
+    .policyList {
+      margin:0;
+      padding:0;
+      list-style-type:none;
+
+      li {
+        display:block;
+        margin:0 0 2em 0;
+
+        h4 {
+          background:#cbcbcb;
+          font-size:1.3em;
+          color:#333;
+          padding:0.5em 1em;
+        }
+      }
+    }
 
     ul {
       margin:0 0 0 2em;
@@ -1177,6 +1442,10 @@ footer {
   display:block;
   margin:0;
 
+  @include bp_phone {
+    border-top:1px solid #ccc;
+  }
+
   .whiteTop {
     @include box-shadow(0px 37px 32px 3px rgba(0,0,0,.3));
     background:white;
@@ -1186,14 +1455,28 @@ footer {
       display:inline-block;
       width:67%;
 
+      @include bp_phone {
+        width:100%;
+      }
+
       .menuItemList {
         display:inline-block;
         margin:0 1em 0 0;
         vertical-align:top;
         width:22%;
 
+        @include bp_phone {
+          width:100%;
+          text-align:center;
+          margin:0 0 1em 0;
+        }
+
         &:last-of-type {
           margin:0;
+
+          @include bp_phone {
+            margin:0 0 2em 0;
+          }
         }
 
         h3 {
@@ -1235,9 +1518,21 @@ footer {
       float:right;
       width:28%;
 
+      @include bp_phone {
+        width:100%;
+        display:block;
+        float:unset;
+      }
+
       img {
         width:100%;
         height:auto;
+
+        @include bp_phone {
+          width:200px;
+          display:block;
+          margin:auto;
+        }
       }
     }
   }
