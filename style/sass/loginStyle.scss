@@ -1,0 +1,17 @@
+@import "common/variables";
+
+body {
+  background:$brand_orange;
+}
+#login {
+  padding-top:1%;
+}
+.login #backtoblog a:focus, .login #nav a:focus, .login h1 a:focus, .login #backtoblog a, .login #nav a {
+  color:white;
+}
+body.login div#login h1 a {
+  background:url(../../images/logo.png) no-repeat;
+  background-size:319px;
+  height:180px;
+  width:322px;
+}

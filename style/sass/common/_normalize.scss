@@ -47,6 +47,13 @@ a {
   display:block;
 }
 
+.contentWrapper {
+  margin:2em auto;
+  float:none;
+  width:90%;
+  display:block;
+}
+
 .pdf_link:after {
   content:"";
   background:url("/wp-content/themes/eoni-twentynineteen/images/pdf_link.png") center right no-repeat;

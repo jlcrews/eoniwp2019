@@ -19,11 +19,4 @@ jQuery(function($) {
             $menuDiv.addClass('open');
         }
     });
-
-    //close menu when X button is clicked
-    $menu_close.click(function() {
-        $menuDiv.animate({ left: '-100%' }, 'slow', function () {
-            $menuDiv.css('display', 'none');
-        });
-    });
 });
